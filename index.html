@@ -1,8 +1,21 @@
 <!DOCTYPE html>
 <html>
     <style>
+      .button {
+    background-color: #ffffff;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
         body {
           background: rgb(243, 197, 225);
+          transition: 0.7
         }
         
         .content {
@@ -28,9 +41,9 @@
 
 <p id="demo">Do You like me?</p>
 
-<button type="button" onclick="myFunction()">Yes</button>
+<button class="button" id="btn"type="button" onclick="myFunction()" ondblclick="myFunction3()">Yes</button>
 
-<button type="button" onclick="myFunction2()">No</button>
+<button class="button" type="button" onclick="myFunction2()">No</button>
 
 <script>
 function myFunction() {
@@ -46,6 +59,73 @@ function myFunction() {
 function myFunction2() {
   document.getElementById("demo").innerHTML = "Say Yes"
 }
+
+function myFunction3() {
+    
+    document.getElementById("demo").innerHTML = "WAIT MORE?"
+    var img = document.createElement('img');
+            img.src = 
+            'meow.png';
+            document.getElementById('demo').appendChild(img);
+            down.innerHTML = "?";
+}
+</script>
+<script>
+  let funcArr = [
+    function () {
+    document.getElementById("demo").innerHTML = "MORE??"
+    var img = document.createElement('img');
+            img.src = 
+            'lovely.png';
+            document.getElementById('demo').appendChild(img);
+            down.innerHTML = "?";
+    },
+    
+    function () {
+    document.getElementById("demo").innerHTML = "ILOVEUTOO"
+    var img = document.createElement('img');
+            img.src = 
+            'lovely.png';
+            document.getElementById('demo').appendChild(img);
+            down.innerHTML = "?";
+    },
+    
+    function () {
+    document.getElementById("demo").innerHTML = "YOU LIKE ME THAT MUCH?"
+    var img = document.createElement('img');
+            img.src = 
+            'lovely.png';
+            document.getElementById('demo').appendChild(img);
+            down.innerHTML = "?";
+    },
+    
+    function Love4() {
+    document.getElementById("demo").innerHTML = "AYE AYE"
+    var img = document.createElement('img');
+            img.src = 
+            'lovely.png';
+            document.getElementById('demo').appendChild(img);
+            down.innerHTML = "?";
+    },
+    
+    function () {
+    document.getElementById("demo").innerHTML = "I can die happy"
+    var img = document.createElement('img');
+            img.src = 
+            'lovely.png';
+            document.getElementById('demo').appendChild(img);
+            down.innerHTML = "?";
+    }
+];
+
+let i = 0;
+
+window.onload = function() {
+    let btn = document.getElementById('btn')[0];
+    btn.onclick = function() {
+        funcArr[i++ % funcArr.length](); // first call function and then, increment the value of i
+    }
+  }
 </script>
 </div>
 </body>
