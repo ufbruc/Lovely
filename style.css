@@ -1,0 +1,29 @@
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: rgb(255, 255, 0);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+ th, td {
+  border-style: inset;
+  border: 1px solid pink;
+  border-radius: 10px;
+}
