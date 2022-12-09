@@ -35,3 +35,10 @@ a:active {
   -webkit-text-stroke-width: 0.3px;
   -webkit-text-stroke-color: white;
 }
+
+h1 {
+  color: pink;
+  -webkit-text-fill-color: pink; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: white;
+}
