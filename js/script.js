@@ -101,3 +101,27 @@ difficulty_buttons.forEach((elem,idx)=>{
         game.setDifficulty(idx+1);
     });
 });
+
+document.getElementById("demo").onclick = function() {myFunction()};
+
+function namevar() {
+    mscPrompt({
+        title: 'Enter Name',
+      
+        subtitle: 'Enter name for research',
+
+        okText: 'Enter',  
+      
+        cancelText: 'Cancel', 
+      
+        placeholder: 'Your name here',
+      
+        onOk: function(val) {
+          mscAlert("Your name: "+val+" has been recorded");
+        },
+      
+        onCancel: function() {
+          mscAlert("Cancelled");
+        }
+      });
+  }
