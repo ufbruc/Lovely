@@ -30,8 +30,15 @@ body{
     box-shadow:0px 8px 0px var(--mcol0);
 }
 
+#name{
+    border:10px;
+    background-color: #747272;
+    border-radius: 10px;
+    font-size:medium;
+}
+
 .puzzle_block{
-    border: 1px;
+    border: 12px;
     border-color:black;
     position:absolute;
     left:0;
