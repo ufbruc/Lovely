@@ -69,7 +69,7 @@ class Game{
     onClickOnBlock(blockIdx){
         if(this.moveBlock(blockIdx)){
             if(this.checkPuzzleSolved()){
-                setTimeout(()=>mscAlert("You Solved The Puzzle!!"),600);
+                setTimeout(()=>mscAlert("You Solved The Puzzle!!"),100);
             }
         }
     }
