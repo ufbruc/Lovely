@@ -103,7 +103,7 @@
         color:var(--mcol0);
     }
 
-    .buttontime{
+    .buttontimer{
         margin:0px;
         padding: 10px;
         border:10px;
@@ -125,7 +125,7 @@
             margin:5px;
         }
 
-        .buttontime:hover{
+        .buttontimer:hover{
             border: 0px;
             transform: scale(1.05);
             
