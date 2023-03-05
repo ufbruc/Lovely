@@ -11,8 +11,14 @@
 
     <style type= "text/css">
       button {
-          padding: 15px;
-          text-align: center;
+        margin:0px;
+        padding: 10px;
+        border:10px;
+        background-color: #747272;
+        border-radius: 10px;
+        font-size:medium;
+        transition: 0.3s;
+        cursor: hand;
       }
     </style>
 
@@ -34,6 +40,33 @@
         <div class="difficulty_button active">EASY</div>
         <div class="difficulty_button">MEDIUM</div>
         <div class="difficulty_button">HARD</div>
+    </div>
+
+    
+    <div class="buttontimer">
+        <p id="para">0</p>
+        <input style="
+                margin:0px;
+                padding: 10px;
+                border:10px;
+                background-color: #747272;
+                border-radius: 10px;
+                font-size:medium;
+                transition: 0.3s;
+                cursor: hand;
+        " class="buttontimer" id="btnStart" type="button" value="Start"
+            onclick="printDuration();" />
+        <input style="
+                margin:0px;
+                padding: 10px;
+                border:10px;
+                background-color: #747272;
+                border-radius: 10px;
+                font-size:medium;
+                transition: 0.3s;
+                cursor: hand;
+        " class="buttontimer" id="BtnStop" type="button" value="Stop"
+            onclick="reset();" />
     </div>
 
     <button id="name" onclick="namevar()">Enter Name</button>

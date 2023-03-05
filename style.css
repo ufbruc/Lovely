@@ -47,7 +47,6 @@ body{
     transition:left 0.3s,top 0.3s;
 }
 
-/*difficulty container*/
 #difficulty_container{
     display:flex;
     flex-direction:row;
@@ -76,4 +75,15 @@ body{
 .difficulty_button.active{
     background-color:inherit;
     color:var(--mcol0);
+}
+
+div.timer {
+    border:1px #666666 solid;
+    width:190px;
+    height:50px;
+    line-height:50px;
+    font-size:36px;
+    font-family:"Courier New", Courier, monospace;
+    text-align:center;
+    margin:5px;
 }

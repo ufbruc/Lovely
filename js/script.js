@@ -70,6 +70,10 @@ class Game{
         if(this.moveBlock(blockIdx)){
             if(this.checkPuzzleSolved()){
                 setTimeout(()=>mscAlert("You Solved The Puzzle!!"),100);
+                stop();
+                
+                
+
             }
         }
     }
@@ -99,6 +103,7 @@ difficulty_buttons.forEach((elem,idx)=>{
         difficulty_buttons[GameDifficulty.indexOf(game.difficulty)].classList.remove("active");
         elem.classList.add("active");
         game.setDifficulty(idx+1);
+        
     });
 });
 
@@ -120,3 +125,27 @@ function namevar() {
         }
       });
   }
+
+  var check = null;
+
+  function printDuration() {
+      if (check == null) {
+          var cnt = 0;
+
+          check = setInterval(function () {
+              cnt += 1;
+              document.getElementById("para").innerHTML = cnt;
+          }, 1000);
+      }
+  }
+
+  function stop() {
+      clearInterval(check);
+      check = null;
+  }
+
+  function reset() {
+    clearInterval(check);
+    check = null;
+    document.getElementById("para").innerHTML = '0';
+}
